@@ -13,6 +13,7 @@ struct CollaborationView: View {
     var body: some View {
         NavigationView {
             VStack {
+                TitleComponent(text: "Collaboration")
                 ScrollView {
                     ForEach(store.groups) { group in
                         NavigationLink {
@@ -24,8 +25,8 @@ struct CollaborationView: View {
                 }
                 Spacer()
             }
-            
-            .navigationBarTitle("Collaboration")
+            .padding()
+            .navigationBarHidden(true)
         }
     }
 }

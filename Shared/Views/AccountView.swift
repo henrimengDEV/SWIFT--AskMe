@@ -7,11 +7,27 @@
 import SwiftUI
 
 struct AccountView: View {
+    @State var text = "xxxxxxxxx"
+    
     var body: some View {
         VStack {
             TitleComponent(text: "Compte")
             ProfilCardComponent()
             SoldeComponent()
+            Form {
+                List {
+                    Section {
+                        TextField("Téléphone", text: $text)
+                        TextField("Téléphone", text: $text)
+                    }
+                }
+                
+                TextField("Téléphone", text: $text)
+                TextField("Téléphone", text: $text)
+                TextField("Téléphone", text: $text)
+                TextField("Téléphone", text: $text)
+                
+            }
             Spacer()
         }.padding()
     }

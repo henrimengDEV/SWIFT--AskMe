@@ -9,9 +9,22 @@ import SwiftUI
 
 @main
 struct AskMeApp: App {
+    @StateObject var store = AppState()
+    
     var body: some Scene {
         WindowGroup {
-            ContentView().environmentObject(AppState())
+            VStack {
+                if store.toggleLanding {
+                    LandingView()
+                        .environmentObject(store)
+                } else {
+                    withAnimation {
+                        MainView()
+                            .transition(.move(edge: .trailing))
+                            .environmentObject(store)
+                    }
+                }
+            }
         }
     }
 }

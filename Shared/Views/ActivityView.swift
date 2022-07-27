@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct ActivityView: View {
+    @EnvironmentObject var store: AppState
     @State var selection: Int = 0
     
     var body: some View {
@@ -21,13 +22,13 @@ struct ActivityView: View {
             .pickerStyle(SegmentedPickerStyle())
             
             if (selection == 0) {
-                AskComponent()
-                AskComponent()
-                AskComponent()
-                AskComponent()
+                ForEach(store.myAsks) { ask in
+                    AskComponent(ask: ask)
+                }
             } else {
-                AskComponent()
-                AskComponent()
+                ForEach(store.asks) { ask in
+                    AskComponent(ask: ask)
+                }
             }
             Spacer()
         }.padding()
@@ -36,6 +37,6 @@ struct ActivityView: View {
 
 struct Activity_Previews: PreviewProvider {
     static var previews: some View {
-        ActivityView()
+        ActivityView().environmentObject(AppState())
     }
 }

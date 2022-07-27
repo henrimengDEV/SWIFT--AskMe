@@ -7,18 +7,18 @@
 
 import SwiftUI
 
+
 struct MainView: View {
     @EnvironmentObject var store: AppState
     
     var body: some View {
         TabView {
             ActivityView()
-                .badge(store.badgeActivity)
+//                .badge(store.badgeActivity)
                 .tabItem {
                     Label("Activité", systemImage: "book.fill")
                 }
             AccountView()
-                .badge("!")
                 .tabItem {
                     Label("Compte", systemImage: "person.crop.circle.fill")
                 }

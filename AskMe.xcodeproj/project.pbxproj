@@ -31,6 +31,8 @@
 		B56A3C1F286C475500C42AFE /* ItemDescription.swift in Sources */ = {isa = PBXBuildFile; fileRef = B56A3C1D286C475500C42AFE /* ItemDescription.swift */; };
 		B56A3C23286C58D800C42AFE /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = B56A3C22286C58D800C42AFE /* Home.swift */; };
 		B56A3C24286C58D800C42AFE /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = B56A3C22286C58D800C42AFE /* Home.swift */; };
+		CC4475082891C91500DBE708 /* LandingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC4475072891C91500DBE708 /* LandingView.swift */; };
+		CC4475092891C91500DBE708 /* LandingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC4475072891C91500DBE708 /* LandingView.swift */; };
 		CC9443702890BA3A00163D10 /* AskComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC94436F2890BA3A00163D10 /* AskComponent.swift */; };
 		CC9443712890BA3A00163D10 /* AskComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC94436F2890BA3A00163D10 /* AskComponent.swift */; };
 		CC9443742890BB1100163D10 /* ActivityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC9443732890BB1000163D10 /* ActivityView.swift */; };
@@ -75,6 +77,8 @@
 		CCD3EA1F289145A20029C4B2 /* TeamCardComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCD3EA1D289145A20029C4B2 /* TeamCardComponent.swift */; };
 		CCD3EA2128914C710029C4B2 /* CounterComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCD3EA2028914C710029C4B2 /* CounterComponent.swift */; };
 		CCD3EA2228914C710029C4B2 /* CounterComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCD3EA2028914C710029C4B2 /* CounterComponent.swift */; };
+		CCD565832891EB400099021B /* Ask.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCD565822891EB400099021B /* Ask.swift */; };
+		CCD565842891EB400099021B /* Ask.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCD565822891EB400099021B /* Ask.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -114,6 +118,7 @@
 		B56A3C1A286C45CC00C42AFE /* AddToList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddToList.swift; sourceTree = "<group>"; };
 		B56A3C1D286C475500C42AFE /* ItemDescription.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemDescription.swift; sourceTree = "<group>"; };
 		B56A3C22286C58D800C42AFE /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
+		CC4475072891C91500DBE708 /* LandingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandingView.swift; sourceTree = "<group>"; };
 		CC94436F2890BA3A00163D10 /* AskComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AskComponent.swift; sourceTree = "<group>"; };
 		CC9443732890BB1000163D10 /* ActivityView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityView.swift; sourceTree = "<group>"; };
 		CC9443772890BD2200163D10 /* FooComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FooComponent.swift; sourceTree = "<group>"; };
@@ -136,6 +141,7 @@
 		CCD3EA1A289143450029C4B2 /* Group.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Group.swift; sourceTree = "<group>"; };
 		CCD3EA1D289145A20029C4B2 /* TeamCardComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamCardComponent.swift; sourceTree = "<group>"; };
 		CCD3EA2028914C710029C4B2 /* CounterComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterComponent.swift; sourceTree = "<group>"; };
+		CCD565822891EB400099021B /* Ask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ask.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -189,10 +195,8 @@
 				B56A3C21286C580E00C42AFE /* Models */,
 				B56A3C20286C579500C42AFE /* AskedThings */,
 				B51A778F286A0CB400A76756 /* AskMeApp.swift */,
-				B51A7790286A0CB400A76756 /* ContentView.swift */,
 				B51A7791286A0CB500A76756 /* Assets.xcassets */,
 				B51A77CB286A0D2500A76756 /* Launch Screen.storyboard */,
-				B50D9C61286B780400E24D6E /* AppState.swift */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -237,6 +241,7 @@
 		B56A3C20286C579500C42AFE /* AskedThings */ = {
 			isa = PBXGroup;
 			children = (
+				B51A7790286A0CB400A76756 /* ContentView.swift */,
 				B51A77CE286A0F1700A76756 /* AskedList.swift */,
 				B56A3C1A286C45CC00C42AFE /* AddToList.swift */,
 				B56A3C1D286C475500C42AFE /* ItemDescription.swift */,
@@ -248,11 +253,13 @@
 		B56A3C21286C580E00C42AFE /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				B50D9C61286B780400E24D6E /* AppState.swift */,
 				B50D9C64286B784200E24D6E /* Item.swift */,
 				CC94439D2890D4AB00163D10 /* Message.swift */,
 				CC9443A02890D4BC00163D10 /* User.swift */,
 				CCD3EA14289136360029C4B2 /* Conversation.swift */,
 				CCD3EA1A289143450029C4B2 /* Group.swift */,
+				CCD565822891EB400099021B /* Ask.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -266,6 +273,7 @@
 				CC94438B2890C06F00163D10 /* MainView.swift */,
 				CCD3EA0E289123F70029C4B2 /* ChatView.swift */,
 				CCD3EA17289138380029C4B2 /* FriendsView.swift */,
+				CC4475072891C91500DBE708 /* LandingView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -451,6 +459,8 @@
 			files = (
 				CC9443A42890D4E900163D10 /* ContentMessageView.swift in Sources */,
 				CCD3EA1E289145A20029C4B2 /* TeamCardComponent.swift in Sources */,
+				CC4475082891C91500DBE708 /* LandingView.swift in Sources */,
+				CCD565832891EB400099021B /* Ask.swift in Sources */,
 				B56A3C1B286C45CC00C42AFE /* AddToList.swift in Sources */,
 				CC94438C2890C06F00163D10 /* MainView.swift in Sources */,
 				B56A3C1E286C475500C42AFE /* ItemDescription.swift in Sources */,
@@ -488,6 +498,8 @@
 			files = (
 				CC9443A52890D4E900163D10 /* ContentMessageView.swift in Sources */,
 				CCD3EA1F289145A20029C4B2 /* TeamCardComponent.swift in Sources */,
+				CC4475092891C91500DBE708 /* LandingView.swift in Sources */,
+				CCD565842891EB400099021B /* Ask.swift in Sources */,
 				B56A3C1C286C45CC00C42AFE /* AddToList.swift in Sources */,
 				CC94438D2890C06F00163D10 /* MainView.swift in Sources */,
 				B56A3C1F286C475500C42AFE /* ItemDescription.swift in Sources */,
